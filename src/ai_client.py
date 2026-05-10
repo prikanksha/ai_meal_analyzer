@@ -42,4 +42,4 @@ def analyze_meal(uploaded_file):
   logger.info("Successfully validated AI response")
   elapsed_time = time.time() - start_time
   logger.info(f"Meal analysis completed in {elapsed_time:.2f} seconds")
-  return validated_response
+  return validated_response.model_dump()

@@ -8,9 +8,9 @@ def render_analysis_result(result: dict) -> None:
 
   col1, col2, col3, col4 = st.columns(4)
   col1.metric("Calories", total["calories"])
-  col2.metric("Protein (g)", total["protein_g"])
-  col3.metric("Carbs (g)", total["carbs_g"])
-  col4.metric("Fats (g)", total["fats_g"])
+  col2.metric("Protein (g)", f'{total["protein_g"]:.2f}g')
+  col3.metric("Carbs (g)", f'{total["carbs_g"]:.2f}g')
+  col4.metric("Fats (g)", f'{total["fat_g"]:.2f}g')
 
   st.subheader("Detected Foods")
   st.table(result["detected_foods"])

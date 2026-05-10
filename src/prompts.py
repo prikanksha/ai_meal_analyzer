@@ -11,7 +11,7 @@ MEAL_ANALYSIS_PROMPT = """
           "calories": 0,
           "protein_g": 0,
           "carbs_g": 0,
-          "fats_g": 0
+          "fat_g": 0
           "fiber_g": 0
         }
       ],
@@ -19,12 +19,14 @@ MEAL_ANALYSIS_PROMPT = """
         "calories": 0,
         "protein_g": 0,
         "carbs_g": 0,
-        "fats_g": 0
+        "fat_g": 0
         "fiber_g": 0
       },
       "confidence": "low/medium/high"
       "notes": ["important caveats or observations about the analysis"],
       "improvement_tips": ["tip 1", "tip 2"]
     }
+  Use the exact key name "detected_foods". Do not use "detected_food_items".
+  Numbers may include decimals.
   Be honest if the image is unclear. Nutrition estimation can be approximate, so provide a confidence level and any important caveats in the notes.
 """
