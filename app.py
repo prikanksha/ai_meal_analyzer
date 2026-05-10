@@ -62,5 +62,6 @@ else:
       st.write(f'Fat: {total["fat_g"]}g')
 
 st.divider()
+
 df = meals_to_dataframe(meals)
 render_dashboard(df)
