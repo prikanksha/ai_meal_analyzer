@@ -5,7 +5,7 @@ def render_dashboard(df):
   st.subheader("Nutrition Dashboard")
 
   if df.empty:
-    st.info("No meal data available.")
+    st.info("No meal data available yet.")
     return
 
   col1, col2, col3 = st.columns(3)
