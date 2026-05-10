@@ -4,3 +4,5 @@ python-dotenv
 pillow
 pillow-heif
 pydantic
+pandas
+plotly
